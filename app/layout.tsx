@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Public_Sans } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 
-const sans = Public_Sans({ subsets: ['latin'] });
+const font = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Oyster Reef',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={sans.className}>
+      <body className={font.className}>
         <NavBar />
         <main>{children}</main>
         <Footer />

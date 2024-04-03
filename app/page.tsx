@@ -1,5 +1,9 @@
-import Image from 'next/image';
+import HeroSection from './home/HeroSection';
 
 export default function Home() {
-  return <section className='bg-blue-500 h-screen'>Home</section>;
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 }
