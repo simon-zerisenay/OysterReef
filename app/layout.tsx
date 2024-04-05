@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import VideoModal from '@/components/VideoModal';
 
 const font = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={font.className}>
         <NavBar />
         <main>{children}</main>
+        <VideoModal videoId='VBJyLfOyNsM' />
         <Footer />
       </body>
     </html>
