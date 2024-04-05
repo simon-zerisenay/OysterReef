@@ -48,7 +48,13 @@ const Footer = () => {
                 <ul className='regular-14 flex gap-4 text-white'>
                   {SOCIALS.links.map((link) => (
                     <Link href='/' key={link}>
-                      <Image src={link} alt='logo' width={24} height={24} />
+                      <Image
+                        src={link}
+                        alt='socials'
+                        width={24}
+                        height={24}
+                        style={{ color: 'white' }}
+                      />
                     </Link>
                   ))}
                 </ul>

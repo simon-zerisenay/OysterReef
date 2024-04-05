@@ -15,4 +15,8 @@
   p {
     @apply text-lg;
   }
+
+  .constrained-div {
+    @apply max-w-[1920px];
+  }
 }

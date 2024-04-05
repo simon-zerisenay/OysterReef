@@ -1,24 +1,43 @@
+import { ABOUT_US, PARTNERS_LOGOS } from '@/constants';
+import Image from 'next/image';
 import React from 'react';
 
 const AboutPage = () => {
   return (
-    <div className='flex flex-col'>
-      <div className=' my-20 flex justify-center'>
-        <h1 className='text-white text-3xl'>About Us</h1>
+    <div className='flex flex-col '>
+      <div className=' mt-20 flex justify-center'>
+        <h1 className='text-white'>{ABOUT_US.title}</h1>
       </div>
-      <div className='flex flex-col  bg-white p-20'>
-        <p className=''>
-          We are a nature tech company dedicated to the restoration of degraded
-          marine ecosystems. Our proprietary Reef Tiles, the world's first
-          3D-printed from terracotta clay, have proven to be a game-changer in
-          coral restoration efforts. With a coral survivorship rate of 95%,
-          these tiles significantly outperform traditional methods. Such success
-          has garnered Archireef recognition from organizations including the
-          World Economic Forum, IUCN, and Geneva Inventions.
-        </p>
+      <div className='flex flex-col p-10 items-center font-light text-white sm:p-20'>
+        <div className='constrained-div'>
+          <p className=''>{ABOUT_US.description}</p>
+        </div>
+      </div>
+      <div className='flex flex-col p-10 items-center font-light bg-white sm:p-20'>
+        <div className='constrained-div'>
+          <h1 className='text-blue-950 mb-10'>Our Partners</h1>
+          <LogoGrid />
+        </div>
       </div>
     </div>
   );
 };
 
 export default AboutPage;
+
+const LogoGrid = () => {
+  return (
+    <div className='grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 justify-items-center'>
+      {PARTNERS_LOGOS.map((item) => (
+        <Image
+          key={item.alt}
+          src={item.src}
+          alt={item.alt}
+          className='p-5 border border-slate-300  md:p-10 hover:bg-blue-50'
+          width={300}
+          height={200}
+        />
+      ))}
+    </div>
+  );
+};
