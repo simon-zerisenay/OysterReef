@@ -47,6 +47,21 @@ export const ARCREEF_FACTS = [
   },
 ];
 
+export const IMPORTANCE_CORAL_REEFS = {
+  title: 'Why are Coral Reefs Important?',
+  description: ` Coral reefs are some of the most diverse ecosystems in the world.
+            Coral polyps, the animals primarily responsible for building reefs,
+            can take many forms: large reef building colonies, graceful flowing
+            fans, and even small, solitary organisms. Thousands of species of
+            corals have been discovered; some live in warm, shallow, tropical
+            seas and others in the cold, dark depths of the ocean.Because of the
+            diversity of life found in the habitats created by corals, reefs are
+            often called the "rainforests of the sea." About 25% of the ocean's
+            fish depend on healthy coral reefs. Fishes and other organisms
+            shelter, find food, reproduce, and rear their young in the many
+            nooks and crannies formed by corals.`,
+};
+
 export const PARTNERS_LOGOS = [
   { name: 'Flash', src: '/partners/1.svg', alt: 'Flash Logo' },
   { name: 'Rise', src: '/partners/2.svg', alt: 'Rise Logo' },

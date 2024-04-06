@@ -6,14 +6,19 @@ import { useEffect, useState } from 'react';
 import OutlineButton from './OutlineButton';
 
 const NavBar = () => {
-  const [opacity, setOpacity] = useState(0);
+  const [opacity, setOpacity] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const maxScroll = document.documentElement.scrollHeight;
       const opacityValue = scrollPosition / maxScroll;
-      setOpacity(scrollPosition);
+      console.log(opacityValue > 0);
+      if (opacityValue > 0) {
+        setOpacity(true);
+      } else {
+        setOpacity(false);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -26,7 +31,10 @@ const NavBar = () => {
   return (
     <nav
       className={`flex justify-between w-full fixed z-50 p-5 opacity-90 `}
-      style={{ backgroundColor: `rgba(0, 10, 50, ${opacity})` }}
+      style={{
+        backgroundColor: `rgba(0, 10, 50, ${opacity ? '100' : '0'})`,
+        transition: 'background-color 0.5s ease',
+      }}
     >
       <Link href='/'>
         <Image src='/logo.png' alt='logo' height={70} width={150} />

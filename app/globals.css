@@ -17,6 +17,6 @@
   }
 
   .constrained-div {
-    @apply max-w-[1920px];
+    @apply max-w-[1290px];
   }
 }
