@@ -77,12 +77,5 @@ export const PARTNERS_LOGOS = [
 
 export const ABOUT_US = {
   title: 'About Us',
-  description: `We are a nature tech company dedicated to the restoration of
-            degraded marine ecosystems. Our proprietary Reef Tiles, the world's
-            first 3D-printed from terracotta clay, have proven to be a
-            game-changer in coral restoration efforts. With a coral survivorship
-            rate of 95%, these tiles significantly outperform traditional
-            methods. Such success has garnered Archireef recognition from
-            organizations including the World Economic Forum, IUCN, and Geneva
-            Inventions.`,
+  description: `Our core focus lies in partnering with private sector enterprises to rejuvenate marine ecosystems. Through the deployment of our innovative Reef Tiles, we work alongside our clients to help them fulfill their Environmental, Social, and Governance (ESG) objectives, leveraging cutting-edge frameworks such as the United Nations Sustainable Development Goals (SDGs) and the Taskforce on Nature-related Financial Disclosures (TNFD). Additionally, we offer enhanced features to our clients, including comprehensive monitoring and reporting tools to track the impact of their initiatives, as well as tailored solutions to address specific environmental challenges faced by their businesses.`,
 };
