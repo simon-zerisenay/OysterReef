@@ -78,7 +78,22 @@ export const MISSION = {
   src: `/mission.jpg`,
   image: `received support from Atlantis Atlas Project’s 1 USD program in 2023. One out of nine projects selected worldwide, conservation focus and creating environmental impact. 100,000 AED 
 `,
-  descrption: `Recycle oyster shells to Create marine ecosystems and habitats.
+  description: `Recycle oyster shells to Create marine ecosystems and habitats.
 Compare coral and ﬁsh communities (species richness and abundance) and water quality before and after dropping the reef.
 `,
 };
+
+export const BEFORE_AFTER_OYSTEER = [
+  {
+    title: 'Before',
+    description: `Implement different shapes of Artificial reefs including the oyster shells to study the efficiency of each shape in fish attraction and habitat creation `,
+    videoUrl:
+      'https://firebasestorage.googleapis.com/v0/b/honey-conference.appspot.com/o/before_oysteer.mp4?alt=media&token=2bb00158-99de-42f1-bbea-595a8d88b815',
+  },
+  {
+    title: 'After',
+    description: `Implement different shapes of Artificial reefs including the oyster shells to study the efficiency of each shape in fish attraction and habitat creation `,
+    videoUrl:
+      'https://firebasestorage.googleapis.com/v0/b/honey-conference.appspot.com/o/after_oysteer.mp4?alt=media&token=c2fe75d8-f6a4-4d3c-b3c1-176d22f8b650',
+  },
+];

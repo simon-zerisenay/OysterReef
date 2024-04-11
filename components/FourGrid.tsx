@@ -2,7 +2,7 @@ import React from 'react';
 
 const FourGrid = ({ data }: any) => {
   return (
-    <div className='flex flex-col w-full justify-between items-stretch gap-20'>
+    <div className='flex flex-col w-full justify-between items-stretch gap-20 my-20'>
       <div className='flex flex-col gap-10 lg:flex-row'>
         <GridItem title={data[0].title} description={data[0].description} />
         <GridItem title={data[1].title} description={data[1].description} />

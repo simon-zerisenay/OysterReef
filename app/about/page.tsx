@@ -29,7 +29,7 @@ const AboutPage = () => {
               />
               <p className='text-sm'>{MISSION.image}</p>
             </div>
-            <p>{MISSION.descrption}</p>
+            <p>{MISSION.description}</p>
           </div>
         </div>
       </div>
