@@ -6,7 +6,7 @@ import {
   IMPORTANCE_CORAL_REEFS,
 } from '@/constants';
 import { kMaxLength } from 'buffer';
-import Image from 'next/image';
+
 import React from 'react';
 import ReactPlayer from 'react-player';
 

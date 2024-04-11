@@ -2,7 +2,7 @@ export const NAV_LINKS = [
   { href: '/', key: 'home', label: 'Home' },
   { href: '/about', key: 'about', label: 'About' },
   { href: '/locations', key: 'locations', label: 'Locations' },
-  { href: '/', key: 'solution ', label: 'Solution ' },
+  { href: '/prototypes', key: 'prototypes ', label: 'Prototypes ' },
 ];
 
 export const HERO_TEXTS = {
