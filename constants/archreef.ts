@@ -59,3 +59,31 @@ export const ARCREEF_PROTOTYPES = [
     scrImage: '/locations/p7.png',
   },
 ];
+
+export const TEAM_MEMBERS = [
+  {
+    name: 'Maryam Alhefeiti',
+    title: 'Marine Researcher',
+    img: '/team/team1.jpeg',
+  },
+  {
+    name: 'Sabhah Ahmoudi',
+    title: 'Aquaculture Researcher',
+    img: '/team/team2.jpeg',
+  },
+  {
+    name: 'Simon Zerisenay',
+    title: 'Data scientist',
+    img: '/team/team3.jpeg',
+  },
+  {
+    name: 'Dr Juan Pablo',
+    title: 'Senior Marine Researcher',
+    img: '/team/team4.jpeg',
+  },
+  {
+    name: 'Dr Fouad Lamghari',
+    title: 'Director of Research',
+    img: '/team/team5.jpeg',
+  },
+];
