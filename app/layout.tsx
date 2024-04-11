@@ -4,6 +4,7 @@ import './globals.css';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import VideoModal from '@/components/VideoModal';
+import { BEFORE_AFTER_OYSTEER } from '@/constants';
 
 const font = Inter({ subsets: ['latin'] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
       <body className={font.className}>
         <NavBar />
         <main>{children}</main>
-        <VideoModal videoId='VBJyLfOyNsM' />
+        <VideoModal videoId={BEFORE_AFTER_OYSTEER[1].videoUrl} />
         <Footer />
       </body>
     </html>

@@ -63,10 +63,30 @@ export const IMPORTANCE_CORAL_REEFS = {
 };
 
 export const PARTNERS_LOGOS = [
-  { name: 'Flash', src: '/partners/1.png', alt: 'Flash Logo' },
-  { name: 'Rise', src: '/partners/2.png', alt: 'Rise Logo' },
-  { name: 'Cactus', src: '/partners/3.png', alt: 'Cactus Logo' },
-  { name: 'Atlantis', src: '/partners/4.png', alt: ' Logo' },
+  {
+    name: 'Coral Life',
+    src: '/partners/1.png',
+    alt: 'Coral Life',
+    url: 'https://www.instagram.com/coralife.ae/',
+  },
+  {
+    name: 'Dibbabay',
+    src: '/partners/2.png',
+    alt: ' Dibbabay',
+    url: 'https://www.dibbabay.com/',
+  },
+  {
+    name: 'FCP',
+    src: '/partners/3.png',
+    alt: ' FCP',
+    url: 'https://www.instagram.com/fcp_1978/',
+  },
+  {
+    name: 'Atlantis',
+    src: '/partners/4.png',
+    alt: 'Atlantis',
+    url: 'https://www.atlantis.com/dubai',
+  },
 ];
 
 export const ABOUT_US = {

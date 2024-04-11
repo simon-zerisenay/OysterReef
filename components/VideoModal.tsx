@@ -1,5 +1,5 @@
 'use client';
-import ReactPlayer from 'react-player/youtube';
+import ReactPlayer from 'react-player';
 
 import { useSearchParams, usePathname } from 'next/navigation';
 import Link from 'next/link';
@@ -17,7 +17,7 @@ const VideoModal = ({ videoId }: VideoModalProps) => {
       {modal && (
         <dialog className='fixed left-0 top-0 w-full h-full bg-black bg-opacity-50 z-50 overflow-auto backdrop-blur flex justify-center items-center'>
           <ReactPlayer
-            url={`https://www.youtube.com/watch?v=${videoId}`}
+            url={videoId}
             controls={true}
             playing={false}
             width='70%'

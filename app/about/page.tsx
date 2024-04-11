@@ -1,6 +1,7 @@
 import { ABOUT_US, MISSION, PARTNERS_LOGOS } from '@/constants';
 import { kMaxLength } from 'buffer';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const AboutPage = () => {
@@ -49,14 +50,15 @@ const LogoGrid = () => {
   return (
     <div className='grid grid-cols-2  lg:grid-cols-4 md:grid-cols-3 justify-items-center'>
       {PARTNERS_LOGOS.map((item) => (
-        <Image
-          key={item.alt}
-          src={item.src}
-          alt={item.alt}
-          className='p-5 border border-slate-300 h-full object-contain  md:p-10 hover:border-black'
-          width={300}
-          height={200}
-        />
+        <Link href={item.url} key={item.alt}>
+          <Image
+            src={item.src}
+            alt={item.alt}
+            className='p-5 border border-slate-300 h-full object-contain  md:p-10 hover:border-black'
+            width={300}
+            height={200}
+          />
+        </Link>
       ))}
     </div>
   );
