@@ -63,19 +63,22 @@ export const IMPORTANCE_CORAL_REEFS = {
 };
 
 export const PARTNERS_LOGOS = [
-  { name: 'Flash', src: '/partners/1.svg', alt: 'Flash Logo' },
-  { name: 'Rise', src: '/partners/2.svg', alt: 'Rise Logo' },
-  { name: 'Cactus', src: '/partners/3.svg', alt: 'Cactus Logo' },
-  { name: 'PinPoint', src: '/partners/4.svg', alt: 'PinPoint Logo' },
-  { name: 'Proline', src: '/partners/5.svg', alt: 'Proline Logo' },
-  { name: 'vision', src: '/partners/6.svg', alt: 'Vision Logo' },
-  { name: 'Volume', src: '/partners/7.svg', alt: 'Volume Logo' },
-  { name: 'hHitech', src: '/partners/8.svg', alt: 'hHitech Logo' },
-  { name: 'Terra', src: '/partners/9.svg', alt: 'Terra Logo' },
-  { name: 'Chain', src: '/partners/10.svg', alt: 'Chain Logo' },
+  { name: 'Flash', src: '/partners/1.png', alt: 'Flash Logo' },
+  { name: 'Rise', src: '/partners/2.png', alt: 'Rise Logo' },
+  { name: 'Cactus', src: '/partners/3.png', alt: 'Cactus Logo' },
+  { name: 'Atlantis', src: '/partners/4.png', alt: ' Logo' },
 ];
 
 export const ABOUT_US = {
   title: 'About Us',
   description: `Our core focus lies in partnering with private sector enterprises to rejuvenate marine ecosystems. Through the deployment of our innovative Reef Tiles, we work alongside our clients to help them fulfill their Environmental, Social, and Governance (ESG) objectives, leveraging cutting-edge frameworks such as the United Nations Sustainable Development Goals (SDGs) and the Taskforce on Nature-related Financial Disclosures (TNFD). Additionally, we offer enhanced features to our clients, including comprehensive monitoring and reporting tools to track the impact of their initiatives, as well as tailored solutions to address specific environmental challenges faced by their businesses.`,
+};
+
+export const MISSION = {
+  src: `/mission.jpg`,
+  image: `received support from Atlantis Atlas Project’s 1 USD program in 2023. One out of nine projects selected worldwide, conservation focus and creating environmental impact. 100,000 AED 
+`,
+  descrption: `Recycle oyster shells to Create marine ecosystems and habitats.
+Compare coral and ﬁsh communities (species richness and abundance) and water quality before and after dropping the reef.
+`,
 };
