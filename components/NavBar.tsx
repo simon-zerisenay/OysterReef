@@ -50,7 +50,9 @@ const NavBar = () => {
             {link.label}
           </Link>
         ))}
-        <OutlineButton onClick={() => {}} title='Contact' />
+        <Link href='/contacts'>
+          <OutlineButton onClick={() => {}} title='Contact' />
+        </Link>
       </ul>
     </nav>
   );

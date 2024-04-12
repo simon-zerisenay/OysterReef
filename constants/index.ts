@@ -27,7 +27,7 @@ export const SOCIALS = {
     'https://www.instagram.com/fujairah_research_centre/',
     'https://www.linkedin.com/company/fujairah-research-center/',
   ],
-  links: ['/facebook.svg', '/instagram.svg', '/youtube.svg'],
+  links: ['/facebook.svg', '/instagram.svg', '/linkedIn.svg'],
 };
 
 export const ARCREEF_FACTS = [

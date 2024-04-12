@@ -31,18 +31,20 @@ const AboutSection = () => {
             className='flex flex-col border border-slate-200 p-10 my-20 gap-10 items-start lg:flex-row'
             key={index}
           >
-            <div className='flex flex-col'>
+            <div className='flex flex-col w-full'>
               <h1 className='text-blue-950 text-3xl md:min-w-[500px]'>
                 {item.title}
               </h1>
-              <p>{item.description}</p>
+              <p className='flex'>{item.description}</p>
             </div>
-            <ReactPlayer
-              url={item.videoUrl}
-              controls={true}
-              playing={false}
-              width='100%'
-            />
+            <div className='flex w-full min-w-[300]'>
+              <ReactPlayer
+                url={item.videoUrl}
+                controls={true}
+                playing={false}
+                width='100%'
+              />
+            </div>
           </div>
         ))}
       </div>
