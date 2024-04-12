@@ -15,14 +15,19 @@ export const HERO_TEXTS = {
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Phone', value: '123-456-7890' },
-    { label: 'Email', value: 'info@frc.com' },
+    { label: 'Phone', value: '+971 92222411' },
+    { label: 'Email', value: 'info@frc.ae' },
   ],
 };
 
 export const SOCIALS = {
   title: 'Social',
-  links: ['/facebook.svg', '/instagram.svg', '/twitter.svg', '/youtube.svg'],
+  href: [
+    'https://www.facebook.com/profile.php?id=100086306988384',
+    'https://www.instagram.com/fujairah_research_centre/',
+    'https://www.linkedin.com/company/fujairah-research-center/',
+  ],
+  links: ['/facebook.svg', '/instagram.svg', '/youtube.svg'],
 };
 
 export const ARCREEF_FACTS = [
@@ -50,7 +55,7 @@ export const ARCREEF_FACTS = [
 
 export const IMPORTANCE_CORAL_REEFS = {
   title: 'Why are Coral Reefs Important?',
-  description: ` Coral reefs are some of the most diverse ecosystems in the world.
+  description: `Coral reefs are some of the most diverse ecosystems in the world.
             Coral polyps, the animals primarily responsible for building reefs,
             can take many forms: large reef building colonies, graceful flowing
             fans, and even small, solitary organisms. Thousands of species of
@@ -97,25 +102,24 @@ export const ABOUT_US = {
 
 export const MISSION = {
   src: `/mission.jpg`,
-  image: `received support from Atlantis Atlas Project’s 1 USD program in 2023. One out of nine projects selected worldwide, conservation focus and creating environmental impact. 100,000 AED 
+  image: `Received support from Atlantis Atlas Project’s 1 USD program in 2023. One out of nine projects selected worldwide, conservation focus and creating environmental impact. 100,000 AED 
 `,
-  description: `Recycle oyster shells to Create marine ecosystems and habitats.
-Compare coral and ﬁsh communities (species richness and abundance) and water quality before and after dropping the reef.
+  description: `In the face of escalating environmental challenges, the importance of artificial reefs as havens for marine life cannot be overstated. They offer a beacon of hope in a changing world, providing refuge, resilience, and rejuvenation for our oceans' fragile ecosystems.
+At the Fujairah Research Centre, we use artificial reefs as essential tools in ecosystem restoration and fisheries management. By attracting fish and other marine life, we help replenish depleted populations, supporting both commercial and recreational fishing industries. 
+Our marine researchers monitor the effectiveness of artificial reefs location, design, and material composition to ensure compatibility with local ecosystems and long-term sustainability.
 `,
 };
 
 export const BEFORE_AFTER_OYSTEER = [
   {
     title: 'Before',
-    description: `In the face of escalating environmental challenges, the importance of artificial reefs as havens for marine life cannot be overstated. They offer a beacon of hope in a changing world, providing refuge, resilience, and rejuvenation for our oceans' fragile ecosystems.
-At the Fujairah Research Centre, we use artificial reefs as essential tools in ecosystem restoration and fisheries management. By attracting fish and other marine life, we help replenish depleted populations, supporting both commercial and recreational fishing industries. 
-Our marine researchers monitor the effectiveness of artificial reefs location, design, and material composition to ensure compatibility with local ecosystems and long-term sustainability. `,
+    description: `Explore the original marine environment, showcasing its baseline biodiversity and structure. This scene sets the stage for understanding the natural habitat prior to intervention, highlighting areas potentially lacking in ecological complexity and fish activity.`,
     videoUrl:
       'https://firebasestorage.googleapis.com/v0/b/honey-conference.appspot.com/o/before_oysteer.mp4?alt=media&token=2bb00158-99de-42f1-bbea-595a8d88b815',
   },
   {
     title: 'After',
-    description: `"Explore the original marine environment, showcasing its baseline biodiversity and structure. This scene sets the stage for understanding the natural habitat prior to intervention, highlighting areas potentially lacking in ecological complexity and fish activity."
+    description: `
 After Installation of Artificial Reefs:
 "Observe the enriched marine ecosystem following the introduction of variously shaped artificial reefs, including oyster shells. This segment demonstrates increased fish attraction and habitat complexity, revealing the tangible benefits of these structures in enhancing marine biodiversity."`,
     videoUrl:

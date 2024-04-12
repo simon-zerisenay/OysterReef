@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className='my-24 mx-20 text-white font-light flex justify-center'>
       <div className='constrained-div padding-container max-container flex w-full flex-col gap-14'>
         <div className='flex flex-col items-start justify-center gap-[10%] md:flex-row'>
-          <Link href='/' className='mb-10'>
+          <Link href='https://www.frc.ae/' className='mb-10'>
             <Image src='/logo.png' alt='logo' height={100} width={200} />
           </Link>
 
@@ -46,10 +46,10 @@ const Footer = () => {
             <div className='flex flex-col gap-5'>
               <FooterColumn title={SOCIALS.title}>
                 <ul className='regular-14 flex gap-4 text-white'>
-                  {SOCIALS.links.map((link) => (
-                    <Link href='/' key={link}>
+                  {SOCIALS.href.map((item, index) => (
+                    <Link href={item} key={item}>
                       <Image
-                        src={link}
+                        src={SOCIALS.links[index]}
                         alt='socials'
                         width={24}
                         height={24}

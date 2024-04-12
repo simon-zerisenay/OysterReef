@@ -23,7 +23,7 @@ const ServicesPage = () => {
             description2='area = 45 sqm'
           />
         </div>
-        <h1 className='text-blue-900 text-6xl mt-20'>
+        <h1 className='text-blue-900 text-4xl mt-20'>
           "Reviving Oceans, Building Reefs"
         </h1>
         <div className='flex flex-col my-20 gap-10'>
@@ -37,6 +37,7 @@ const ServicesPage = () => {
           />
         </div>
         <div className='flex flex-col my-20 gap-10'>
+          <h1 className='text-blue-950 mt-20'>Gallery</h1>
           <Image
             src={'/fish.png'}
             alt='fish'
@@ -46,6 +47,7 @@ const ServicesPage = () => {
           />
         </div>
         <div className='flex flex-col my-20 gap-10'>
+          <h1 className='text-blue-950 mt-20'>3D Designs</h1>
           <Image
             src={'/concrete.png'}
             alt='fish'
