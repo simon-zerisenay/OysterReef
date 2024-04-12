@@ -28,9 +28,9 @@ const AboutPage = () => {
                 alt='mission'
                 width={kMaxLength}
                 height={kMaxLength}
-                className='max-w-[700px]'
+                className='max-w-[700px] flex w-full h-full'
               />
-              <p className='text-sm'>{MISSION.image}</p>
+              <p className='text-sm max-w-[700px]'>{MISSION.image}</p>
             </div>
             <p>{MISSION.description}</p>
           </div>
