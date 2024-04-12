@@ -1,3 +1,4 @@
+import { kMaxLength } from 'buffer';
 import Image from 'next/image';
 import React from 'react';
 
@@ -11,18 +12,46 @@ const ServicesPage = () => {
         <div className='grid grid-cols-1  md:grid-cols-2 justify-items-center gap-10'>
           <PriceCard
             title='Moderate'
-            price='200'
+            price='200K'
             description='Set-up fee AED 200,000'
           />
           <PriceCard
             title='High'
-            price='400'
+            price='400K'
             description='Set-up fee AED 400,000'
           />
         </div>
-        <h1 className='text-blue-900 text-3xl mt-20'>
+        <h1 className='text-blue-900 text-4xl mt-20'>
           "Reviving Oceans, Building Reefs"
         </h1>
+        <div className='flex flex-col my-20 gap-10'>
+          <h1 className='text-blue-950 md:min-w-[500px]'>Project Benefits</h1>
+          <Image
+            src={'/benefit.png'}
+            alt='benefit'
+            width={kMaxLength}
+            height={kMaxLength}
+            className=' object-cover flex w-full h-full'
+          />
+        </div>
+        <div className='flex flex-col my-20 gap-10'>
+          <Image
+            src={'/fish.png'}
+            alt='fish'
+            width={kMaxLength}
+            height={kMaxLength}
+            className=' object-cover flex w-full h-full'
+          />
+        </div>
+        <div className='flex flex-col my-20 gap-10'>
+          <Image
+            src={'/concrete.png'}
+            alt='fish'
+            width={kMaxLength}
+            height={kMaxLength}
+            className=' object-cover flex w-full h-full'
+          />
+        </div>
       </div>
     </div>
   );
@@ -43,7 +72,6 @@ export const PriceCard = ({ title, description, price }: PriceCardProps) => {
       <div className='flex items-center mb-4'>
         <span className='text-4xl font-bold mr-2'>$</span>
         <span className='text-4xl font-bold text-blue-900'>{price}</span>
-        <span className='text-sm ml-1'>/ month</span>
       </div>
       <ul className='list-none space-y-2 mb-5'>
         <li className='flex items-center'>
