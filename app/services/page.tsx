@@ -14,11 +14,13 @@ const ServicesPage = () => {
             title='Moderate'
             price='200K'
             description='Set-up fee AED 200,000'
+            description2='area = 45 sqm'
           />
           <PriceCard
             title='High'
             price='400K'
             description='Set-up fee AED 400,000'
+            description2='area = 45 sqm'
           />
         </div>
         <h1 className='text-blue-900 text-4xl mt-20'>
@@ -62,21 +64,33 @@ export default ServicesPage;
 interface PriceCardProps {
   title: string;
   description: string;
+  description2: string;
   price: string;
 }
 
-export const PriceCard = ({ title, description, price }: PriceCardProps) => {
+export const PriceCard = ({
+  title,
+  description,
+  description2,
+  price,
+}: PriceCardProps) => {
   return (
     <div className='w-[300px] border border-slate-300 flex flex-col shadow-md p-10 hover:border-blue-900 duration-100'>
-      <h2 className='text-xl font-medium mb-4'>{title}</h2>
+      <h2 className='text-xl font-medium '>{title}</h2>
+      <p className='mb-4'>area of development</p>
       <div className='flex items-center mb-4'>
-        <span className='text-4xl font-bold mr-2'>$</span>
+        <span className='text-4xl font-bold mr-2'>AED</span>
         <span className='text-4xl font-bold text-blue-900'>{price}</span>
       </div>
+
       <ul className='list-none space-y-2 mb-5'>
         <li className='flex items-center'>
           <span>- {description}</span>
         </li>
+        <li className='flex items-center'>
+          <span>- {description2}</span>
+        </li>
+        ;
       </ul>
       <div className=' w-full flex justify-center mt-10 '>
         <button className='px-4 py-2 bg-blue-900 text-white hover:text-black hover:bg-blue-200'>

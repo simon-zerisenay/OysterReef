@@ -60,25 +60,6 @@ const AboutPage = () => {
         <div className='constrained-div w-full'>
           <h1 className='text-blue-950 mb-10'>Our Partners</h1>
           <LogoGrid />
-          <div className='flex flex-col my-20 gap-10'>
-            <h1 className='text-blue-950 md:min-w-[500px]'>Project Benefits</h1>
-            <Image
-              src={'/benefit.png'}
-              alt='benefit'
-              width={kMaxLength}
-              height={kMaxLength}
-              className=' object-cover flex w-full h-full'
-            />
-          </div>
-          <div className='flex flex-col my-20 gap-10'>
-            <Image
-              src={'/fish.png'}
-              alt='fish'
-              width={kMaxLength}
-              height={kMaxLength}
-              className=' object-cover flex w-full h-full'
-            />
-          </div>
         </div>
       </div>
     </div>

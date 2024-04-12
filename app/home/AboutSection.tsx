@@ -35,6 +35,7 @@ const AboutSection = () => {
               <h1 className='text-blue-950 text-3xl md:min-w-[500px]'>
                 {item.title}
               </h1>
+              <p>{item.description}</p>
             </div>
             <ReactPlayer
               url={item.videoUrl}

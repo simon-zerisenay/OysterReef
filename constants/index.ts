@@ -107,13 +107,17 @@ Compare coral and ﬁsh communities (species richness and abundance) and water q
 export const BEFORE_AFTER_OYSTEER = [
   {
     title: 'Before',
-    description: `Implement different shapes of Artificial reefs including the oyster shells to study the efficiency of each shape in fish attraction and habitat creation `,
+    description: `In the face of escalating environmental challenges, the importance of artificial reefs as havens for marine life cannot be overstated. They offer a beacon of hope in a changing world, providing refuge, resilience, and rejuvenation for our oceans' fragile ecosystems.
+At the Fujairah Research Centre, we use artificial reefs as essential tools in ecosystem restoration and fisheries management. By attracting fish and other marine life, we help replenish depleted populations, supporting both commercial and recreational fishing industries. 
+Our marine researchers monitor the effectiveness of artificial reefs location, design, and material composition to ensure compatibility with local ecosystems and long-term sustainability. `,
     videoUrl:
       'https://firebasestorage.googleapis.com/v0/b/honey-conference.appspot.com/o/before_oysteer.mp4?alt=media&token=2bb00158-99de-42f1-bbea-595a8d88b815',
   },
   {
     title: 'After',
-    description: `Implement different shapes of Artificial reefs including the oyster shells to study the efficiency of each shape in fish attraction and habitat creation `,
+    description: `"Explore the original marine environment, showcasing its baseline biodiversity and structure. This scene sets the stage for understanding the natural habitat prior to intervention, highlighting areas potentially lacking in ecological complexity and fish activity."
+After Installation of Artificial Reefs:
+"Observe the enriched marine ecosystem following the introduction of variously shaped artificial reefs, including oyster shells. This segment demonstrates increased fish attraction and habitat complexity, revealing the tangible benefits of these structures in enhancing marine biodiversity."`,
     videoUrl:
       'https://firebasestorage.googleapis.com/v0/b/honey-conference.appspot.com/o/after_oysteer.mp4?alt=media&token=c2fe75d8-f6a4-4d3c-b3c1-176d22f8b650',
   },
