@@ -23,7 +23,7 @@ const ServicesPage = () => {
             description2='area = 45 sqm'
           />
         </div>
-        <h1 className='text-blue-900 text-4xl mt-20'>
+        <h1 className='text-blue-900 text-6xl mt-20'>
           "Reviving Oceans, Building Reefs"
         </h1>
         <div className='flex flex-col my-20 gap-10'>
