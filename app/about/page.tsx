@@ -39,14 +39,14 @@ const AboutPage = () => {
       <div className='flex flex-col p-10  items-center font-light bg-white sm:p-20'>
         <div className='constrained-div w-full '>
           <h1 className='text-blue-950 mb-10'>Meet the Team</h1>
-          <div className='grid grid-cols-2  xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 gap-10'>
+          <div className='grid grid-cols-1  xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 gap-10'>
             {TEAM_MEMBERS.map((team, index) => (
               <div
                 key={index}
                 className='flex flex-col items-center text-center'
               >
                 <Avatar src={team.img} alt={team.name} size={200} />
-                <h2 className='text-xl text-blue-950 font-semibold mt-2'>
+                <h2 className='text-xl text-blue-950 font-semibold  mt-2'>
                   {team.name}
                 </h2>
                 <p className='text-lg'>{team.title}</p>
