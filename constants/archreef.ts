@@ -86,4 +86,9 @@ export const TEAM_MEMBERS = [
     title: 'Director of Research',
     img: '/team/team5.jpeg',
   },
+  {
+    name: 'Mohab Aly Marine ',
+    title: 'Researcher',
+    img: '/team/team6.jpeg',
+  },
 ];

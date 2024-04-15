@@ -4,9 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import OutlineButton from './OutlineButton';
+import NavMobile from './NavMobile';
 
 const NavBar = () => {
   const [opacity, setOpacity] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,9 +32,9 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`flex justify-between w-full fixed z-50 p-5 opacity-90 `}
+      className={`flex justify-between w-full fixed z-50 p-5 `}
       style={{
-        backgroundColor: `rgba(0, 10, 50, ${opacity ? '100' : '0'})`,
+        backgroundColor: `rgba(23,37,84, ${opacity || isOpen ? '1' : '0'})`,
         transition: 'background-color 0.5s ease',
       }}
     >
@@ -54,6 +56,7 @@ const NavBar = () => {
           <OutlineButton onClick={() => {}} title='Contact' />
         </Link>
       </ul>
+      <NavMobile isOpen={isOpen} setOpen={setOpen} />
     </nav>
   );
 };
