@@ -32,24 +32,20 @@ export const SOCIALS = {
 
 export const ARCREEF_FACTS = [
   {
-    title: 'Biodiversity Hotspots',
-    description:
-      'Coral reefs teem with life, supporting around 25% of all marine species, including colorful fish, sea turtles, sharks, and even tiny organisms like plankton. This incredible biodiversity makes them vital for a healthy ocean.',
+    title: 'Water Filtration',
+    description: `Oyster reefs act as natural filters, with each oyster capable of filtering several gallons of water per day. By removing suspended particles, excess nutrients, and pollutants, they improve water clarity and quality, benefiting marine life and supporting healthy aquatic ecosystems.`,
   },
   {
-    title: 'Natural Coastal Defense',
-    description:
-      'Coral reefs act as buffers, absorbing wave energy and reducing the impact of storms, hurricanes, and tsunamis on shorelines. This protects coastal communities and saves lives.',
+    title: 'Coastal Protection',
+    description: `Oyster reefs help stabilize shorelines and protect coastal areas from erosion and storm damage. The intricate structure of the reefs dissipates wave energy, reducing the impacts of waves and currents on adjacent shorelines. This natural coastal defense is particularly valuable in mitigating the effects of storms, sea level rise, and erosion.`,
   },
   {
-    title: 'Ancient Structures',
-    description:
-      'Coral reefs are formed by tiny animals called polyps that secrete calcium carbonate to build hard skeletons. Over hundreds of thousands of years, these skeletons accumulate, creating the massive and complex structures we see today.',
+    title: 'Habitat and Biodiversity',
+    description: `Oyster reefs provide critical habitat for a wide range of marine organisms. The reefs offer shelter, breeding grounds, and foraging areas for fish, crabs, mollusks, and other invertebrates. This high level of biodiversity supports ecosystem resilience and promotes the productivity of coastal waters`,
   },
   {
     title: 'Economic Powerhouses',
-    description:
-      'Coral reefs provide food for millions of people, attract tourists from around the world, and support fishing industries, generating billions of dollars annually. Additionally, scientists are exploring reefs for new medicines to treat diseases like cancer and Alzheimer’s.',
+    description: `Oyster reefs support valuable fisheries by providing habitat for commercially important species, providing food for millions of people, and attracting tourists from around the world.`,
   },
 ];
 

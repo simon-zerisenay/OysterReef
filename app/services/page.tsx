@@ -21,7 +21,7 @@ const ServicesPage = () => {
             title='High'
             price='400K'
             description='Set-up fee AED 400,000'
-            description2='area = 45 sqm'
+            description2='area = 90 sqm'
           />
         </div>
         <h1 className='text-blue-900 text-4xl mt-20'>

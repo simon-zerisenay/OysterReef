@@ -22,7 +22,7 @@ const AboutSection = () => {
           <p>{IMPORTANCE_CORAL_REEFS.description}</p>
         </div>
         <h1 className='text-blue-950 md:min-w-[400px] mt-40 mb-10'>
-          Coral Reef Facts
+          Oyster Reef Facts
         </h1>
         <FourGrid data={ARCREEF_FACTS} />
 
