@@ -14,8 +14,8 @@ export const PriceCard = ({
 }: PriceCardProps) => {
   return (
     <div className='w-[300px] border border-slate-300 flex flex-col shadow-md p-10 hover:border-blue-900 duration-100'>
-      <h2 className='text-xl font-medium '>{title}</h2>
-      <p className='mb-4'>area of development</p>
+      <h2 className='text-xl font-medium mb-4 '>{title}</h2>
+
       <div className='flex items-center mb-4'>
         <span className='text-4xl font-bold mr-2'>AED</span>
         <span className='text-4xl font-bold text-blue-900'>{price}</span>

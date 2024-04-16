@@ -13,7 +13,6 @@ const ServicesPage = () => {
     'real-time access',
     'reef named as per sponsor brand',
     'trimestral dive',
-    'integrated chatbot to answer directly to any inquiries',
   ];
   return (
     <div className='flex flex-col'>
@@ -51,12 +50,12 @@ const ServicesPage = () => {
             ]}
           />
         </div>
-        <div className='w-full flex flex-col mb-10'>
-          <h1 className='text-blue-900 mt-20'>Features</h1>
-          <ul>
+        <div className='w-full flex flex-col items-center mb-10'>
+          <h1 className='text-blue-900  text-4xl mt-20 mb-10 '>Features</h1>
+          <ul className='grid-cols-1 grid sm:grid-cols-2 items-center justify-center '>
             {features.map((feature, index) => (
-              <li key={index}>
-                <p className='text-xl font-medium'>- {feature}</p>
+              <li key={index} className='flex mx-10 '>
+                <p className='text-xl font-medium '>- {feature}</p>
               </li>
             ))}
           </ul>
