@@ -1,4 +1,5 @@
 'use client';
+import { IoCheckmark } from 'react-icons/io5';
 
 interface PriceCardProps {
   title: string;
@@ -23,8 +24,11 @@ export const PriceCard = ({
 
       <ul className='list-none space-y-2 mb-5'>
         {description.map((item, index) => (
-          <li key={index} className='flex items-center'>
-            <span>- {item}</span>
+          <li key={index} className='flex items-center gap-2'>
+            <span>
+              <IoCheckmark />
+            </span>
+            <span> {item}</span>
           </li>
         ))}
       </ul>

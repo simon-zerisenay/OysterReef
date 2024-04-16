@@ -2,6 +2,7 @@ import { PriceCard } from '@/components/PriceCard';
 import { kMaxLength } from 'buffer';
 import Image from 'next/image';
 import React from 'react';
+import { IoCheckmark } from 'react-icons/io5';
 
 const ServicesPage = () => {
   const features = [
@@ -52,10 +53,13 @@ const ServicesPage = () => {
         </div>
         <div className='w-full flex flex-col items-center mb-10'>
           <h1 className='text-blue-900  text-4xl mt-20 mb-10 '>Features</h1>
-          <ul className='grid-cols-1 grid sm:grid-cols-2 items-center justify-center '>
+          <ul className='grid-cols-1 grid sm:grid-cols-2 items-center justify-center gap-2'>
             {features.map((feature, index) => (
-              <li key={index} className='flex mx-10 '>
-                <p className='text-xl font-medium '>- {feature}</p>
+              <li key={index} className='flex mx-10  gap-2 items-center'>
+                <span>
+                  <IoCheckmark />
+                </span>
+                <p className='text-xl font-medium '> {feature}</p>
               </li>
             ))}
           </ul>
