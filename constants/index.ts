@@ -54,18 +54,8 @@ export const ARCREEF_FACTS = [
 ];
 
 export const IMPORTANCE_CORAL_REEFS = {
-  title: 'Why are Coral Reefs Important?',
-  description: `Coral reefs are some of the most diverse ecosystems in the world.
-            Coral polyps, the animals primarily responsible for building reefs,
-            can take many forms: large reef building colonies, graceful flowing
-            fans, and even small, solitary organisms. Thousands of species of
-            corals have been discovered; some live in warm, shallow, tropical
-            seas and others in the cold, dark depths of the ocean.Because of the
-            diversity of life found in the habitats created by corals, reefs are
-            often called the "rainforests of the sea." About 25% of the ocean's
-            fish depend on healthy coral reefs. Fishes and other organisms
-            shelter, find food, reproduce, and rear their young in the many
-            nooks and crannies formed by corals.`,
+  title: 'Why are Oyster Reefs Important?',
+  description: `An oyster reef refers to a structure formed by clusters of oysters tightly packed together. These reefs are typically found in shallow coastal waters. Over time, oyster reefs are the most severely threatened marine habitat in the world, a habitat that provides shelter and food for a diverse array of marine life. Oyster reefs play a crucial role in marine ecosystems, contributing to water filtration, shoreline stabilization, and biodiversity conservation. Additionally, they have significant economic and cultural importance, supporting commercial fisheries and providing recreational opportunities for activities like fishing and shellfish harvesting.`,
 };
 
 export const PARTNERS_LOGOS = [
