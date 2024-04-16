@@ -27,7 +27,7 @@ const ServicesPage = () => {
             price='12K'
             description={[
               'Setup fee: AED 12000',
-              'Price per Sqm: AED 7000,',
+              'Price per Sqm: AED 7000',
               'Minimum reef: 10 sqm',
             ]}
           />
@@ -36,7 +36,7 @@ const ServicesPage = () => {
             price='36K'
             description={[
               'Setup fee: AED 36000',
-              'Price per Sqm: AED 6000,',
+              'Price per Sqm: AED 6000',
               'Minimum reef: 50 sqm',
             ]}
           />
@@ -46,8 +46,8 @@ const ServicesPage = () => {
             price='96K'
             description={[
               'Setup fee: AED 96000',
-              'Price per Sqm: AED 5000,',
-              'Minimum reef: 150 sqm,',
+              'Price per Sqm: AED 5000',
+              'Minimum reef: 150 sqm',
             ]}
           />
         </div>
