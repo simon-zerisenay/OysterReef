@@ -2,15 +2,14 @@
 
 interface PriceCardProps {
   title: string;
-  description: string;
-  description2: string;
+  description: string[];
   price: string;
 }
 
 export const PriceCard = ({
   title,
   description,
-  description2,
+
   price,
 }: PriceCardProps) => {
   return (
@@ -23,12 +22,11 @@ export const PriceCard = ({
       </div>
 
       <ul className='list-none space-y-2 mb-5'>
-        <li className='flex items-center'>
-          <span>- {description}</span>
-        </li>
-        <li className='flex items-center'>
-          <span>- {description2}</span>
-        </li>
+        {description.map((item, index) => (
+          <li key={index} className='flex items-center'>
+            <span>- {item}</span>
+          </li>
+        ))}
       </ul>
       <div className=' w-full flex justify-center mt-10 '>
         <button className='px-4 py-2 bg-blue-900 text-white hover:text-black hover:bg-blue-200'>
