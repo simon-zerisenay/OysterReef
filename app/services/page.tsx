@@ -26,18 +26,18 @@ const ServicesPage = () => {
             title='Silver Sponsor'
             price='12K'
             description={[
-              'Setup fee : AED 12000',
-              'Price per Sqm :AED 7000,',
-              'Minimum reef : 10 sqm',
+              'Setup fee: AED 12000',
+              'Price per Sqm: AED 7000,',
+              'Minimum reef: 10 sqm',
             ]}
           />
           <PriceCard
             title='Gold Sponsor'
             price='36K'
             description={[
-              'Setup fee : AED 36000',
-              'Price per Sqm :AED 6000,',
-              'Minimum reef : 50 sqm',
+              'Setup fee: AED 36000',
+              'Price per Sqm: AED 6000,',
+              'Minimum reef: 50 sqm',
             ]}
           />
 
@@ -45,9 +45,9 @@ const ServicesPage = () => {
             title='Platinum'
             price='96K'
             description={[
-              'Setup fee : AED 96000',
-              'Price per Sqm :AED 5000,',
-              'Minimum reef : 150 sqm,',
+              'Setup fee: AED 96000',
+              'Price per Sqm: AED 5000,',
+              'Minimum reef: 150 sqm,',
             ]}
           />
         </div>
