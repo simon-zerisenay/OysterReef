@@ -3,6 +3,13 @@ import { kMaxLength } from 'buffer';
 import Image from 'next/image';
 import React from 'react';
 import { IoCheckmark } from 'react-icons/io5';
+import data from '../priceData/data.json'
+
+interface PriceCardData {
+  title: string;
+  price: string;
+  description: string[];
+}
 
 const ServicesPage = () => {
   const features = [
@@ -22,34 +29,15 @@ const ServicesPage = () => {
       </div>
       <div className='flex flex-col p-20 items-center font-light bg-white min-h-screen '>
         <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10'>
-          <PriceCard
-            title='Silver Sponsor'
-            price='12K'
-            description={[
-              'Setup fee: AED 12000',
-              'Price per Sqm: AED 7000',
-              'Minimum reef: 10 sqm',
-            ]}
-          />
-          <PriceCard
-            title='Gold Sponsor'
-            price='36K'
-            description={[
-              'Setup fee: AED 36000',
-              'Price per Sqm: AED 6000',
-              'Minimum reef: 50 sqm',
-            ]}
-          />
-
-          <PriceCard
-            title='Platinum'
-            price='96K'
-            description={[
-              'Setup fee: AED 96000',
-              'Price per Sqm: AED 5000',
-              'Minimum reef: 150 sqm',
-            ]}
-          />
+          {data.map((card: PriceCardData) => (
+            <PriceCard
+              key={card.title} 
+              title={card.title}
+              price={card.price}
+              description={card.description}
+            />
+          ))}
+          
         </div>
         <div className='w-full flex flex-col items-center mb-10'>
           <h1 className='text-blue-900  text-4xl mt-20 mb-10 '>Features</h1>

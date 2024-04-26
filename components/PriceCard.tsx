@@ -1,5 +1,6 @@
 'use client';
 import { IoCheckmark } from 'react-icons/io5';
+import Popup from './popup';
 
 interface PriceCardProps {
   title: string;
@@ -33,10 +34,14 @@ export const PriceCard = ({
         ))}
       </ul>
       <div className=' w-full flex justify-center mt-10 '>
-        <button className='px-4 py-2 bg-blue-900 text-white hover:text-black hover:bg-blue-200'>
-          Buy Plan
-        </button>
+        {/* <button className='px-4 py-2 bg-blue-900 text-white hover:text-black hover:bg-blue-200'>
+          Contact Us
+        </button> */}
       </div>
+      <Popup
+      title={title} 
+      price={price}
+      ></Popup>
     </div>
   );
 };

@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Silver Sponsor",
+    "price": "12K",
+    "description": [
+      "Setup fee: AED 12,000",
+      "Price per Sqm: AED 7,000",
+      "Minimum reef: 10 sqm"
+    ]
+  },
+  {
+    "title": "Gold Sponsor",
+    "price": "36K",
+    "description": [
+      "Setup fee: AED 36,000",
+      "Price per Sqm: AED 6,000",
+      "Minimum reef: 50 sqm"
+    ]
+  },
+  {
+    "title": "Platinum",
+    "price": "96K",
+    "description": [
+      "Setup fee: AED 96,000",
+      "Price per Sqm: AED 5,000",
+      "Minimum reef: 150 sqm"
+    ]
+  }
+]
