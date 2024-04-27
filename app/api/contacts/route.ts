@@ -1,75 +1,79 @@
-import {NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-//require('dotenv').config()
-// import { NextResponse } from 'next';
+import dotenv from 'dotenv';
 
-export async function POST(req: Request, res:Response) {
+dotenv.config();
+
+export async function POST(req: Request, res: Response) {
   const data = await req.json();
   console.log(data);
-//   return new Response(data);
 
-    try {
-      const { email, message, name } = data;
+  try {
+    const { email, message, subject, name } = data;
 
-      // Validate input (optional, but recommended)
-      if (!email || !message || !name) {
-        throw new Error('Missing required fields in request body.');
-      }
+    // Validate input (optional, but recommended)
+    if (!email || !message || !subject || !name) {
+      throw new Error('Missing required fields in request body.');
+    }
 
-      const transporter = nodemailer.createTransport({
-        service: "gmail",
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: "eyasuaraya0@gmail.com",
-    pass:process.env.Email_Password,
-  },
-       
-    })
-const html = `
-    <style>
+    const transporter = await nodemailer.createTransport({
+      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: "eyasuaraya0@gmail.com",
+        pass: process.env.Email_Password,
+      },
+    });
+
+    const html = `
+      <style>
         .center {
-            text-align: center;
+          text-align: center;
         }
-        
-    </style>
-    <div class="center">
+      </style>
+      <div class="center">
         <h1>Welcome to FRC Activity App!</h1>
         <p>${email}</p>
         <p>${message}</p>
-        
-    </div>
-`;
-    const mailOptions={
-        from: {
-    name: name, // Set the display name using the request body's name
-    address: email // Use your actual email address
-  },
-        to: '"FRC Activity App" <eyasuaraya0@gmail.com>',
-        text:message,
-        html: html,
+      </div>
+    `;
+
+    const mailOptions = {
+      from: {
+        name: name, // Set the display name using the request body's name
+        address: email, // Use your actual email address
+      },
+      to: '"FRC Activity App" <eyasuaraya0@gmail.com>',
+      text: message,
+      html: html,
+    };
+
+    const info = await transporter.sendMail(mailOptions);
+
+    if (info.response) {
+      console.log('Email Sent:', info.response);
+      await sendAutomaticReply(email, name);
+      return new Response(JSON.stringify({ message: 'Email sent successfully!' }), {
+        status: 200,
+      });
+    } else {
+      console.error('Error sending email');
+      return new Response(JSON.stringify({ message: 'Failed to send email!' }), {
+        status: 500,
+      });
     }
-    transporter.sendMail(mailOptions, function(error,info){
-        if(error){
-            console.log(error)
-        }else{
-            console.log('Email Send:' + info.response)
-           sendAutomaticReply(email, name);
-        }
-        
-    })
-    return new Response('there was no error')
-    } catch (error) {
-      console.error('Error sending email:', error);
-      return new Response('there was an error')
-    //   res.status(500).json({ message: 'Error sending email.' });
-    }
-  
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return new Response(JSON.stringify({ message: 'Error sending email!' }), {
+      status: 500,
+    });
+  }
 }
 
-const sendAutomaticReply = (recipientEmail: string, recipientName: string) => {
-  const transporter = nodemailer.createTransport({
+const sendAutomaticReply = async (recipientEmail: string, recipientName: string) => {
+  const transporter = await nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
     port: 587,
@@ -95,11 +99,11 @@ const sendAutomaticReply = (recipientEmail: string, recipientName: string) => {
     html: replyHtml,
   };
 
-  transporter.sendMail(replyMailOptions, function (error, info) {
-    if (error) {
-      console.log("Error sending automatic reply:", error);
-    } else {
-      console.log('Automatic reply sent:' + info.response);
-    }
-  });
+  const info = await transporter.sendMail(replyMailOptions);
+
+  if (info.response) {
+    console.log('Automatic reply sent:', info.response);
+  } else {
+    console.error("Error sending automatic reply:", Error);
+  }
 };
