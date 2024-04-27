@@ -9,10 +9,10 @@ export async function POST(req: Request, res: Response) {
   console.log(data);
 
   try {
-    const { email, message, subject, name } = data;
+    const { email, message,  name } = data;
 
     // Validate input (optional, but recommended)
-    if (!email || !message || !subject || !name) {
+    if (!email || !message || !name) {
       throw new Error('Missing required fields in request body.');
     }
 
