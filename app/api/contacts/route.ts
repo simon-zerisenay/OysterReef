@@ -54,7 +54,7 @@ export async function POST(req: Request, res: Response) {
 
     if (info.response) {
       console.log('Email Sent:', info.response);
-      await sendAutomaticReply(email, name);
+      //await sendAutomaticReply(email, name);
       return new Response(JSON.stringify({ message: 'Email sent successfully!' }), {
         status: 200,
       });
@@ -72,38 +72,38 @@ export async function POST(req: Request, res: Response) {
   }
 }
 
-const sendAutomaticReply = async (recipientEmail: string, recipientName: string) => {
-  const transporter = await nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    auth: {
-      user: "eyasuaraya0@gmail.com",
-      pass: process.env.Email_Password,
-    },
-  });
+// const sendAutomaticReply = async (recipientEmail: string, recipientName: string) => {
+//   const transporter = await nodemailer.createTransport({
+//     service: "gmail",
+//     host: "smtp.gmail.com",
+//     port: 587,
+//     secure: false,
+//     auth: {
+//       user: "eyasuaraya0@gmail.com",
+//       pass: process.env.Email_Password,
+//     },
+//   });
 
-  const replyHtml = `
-    <div>
-      <p>Dear ${recipientName},</p>
-      <p>Thank you for contacting us. We have received your message and will get back to you as soon as possible.</p>
-      <p>Best regards,<br/>FRC Activity App Team</p>
-    </div>
-  `;
+//   const replyHtml = `
+//     <div>
+//       <p>Dear ${recipientName},</p>
+//       <p>Thank you for contacting us. We have received your message and will get back to you as soon as possible.</p>
+//       <p>Best regards,<br/>FRC Activity App Team</p>
+//     </div>
+//   `;
 
-  const replyMailOptions = {
-    from: '"FRC Activity App" <eyasuaraya0@gmail.com>',
-    to: `"${recipientName}" <${recipientEmail}>`,
-    subject: "Re: Your Message",
-    html: replyHtml,
-  };
+//   const replyMailOptions = {
+//     from: '"FRC Activity App" <eyasuaraya0@gmail.com>',
+//     to: `"${recipientName}" <${recipientEmail}>`,
+//     subject: "Re: Your Message",
+//     html: replyHtml,
+//   };
 
-  const info = await transporter.sendMail(replyMailOptions);
+//   const info = await transporter.sendMail(replyMailOptions);
 
-  if (info.response) {
-    console.log('Automatic reply sent:', info.response);
-  } else {
-    console.error("Error sending automatic reply:", Error);
-  }
-};
+//   if (info.response) {
+//     console.log('Automatic reply sent:', info.response);
+//   } else {
+//     console.error("Error sending automatic reply:", Error);
+//   }
+// };

@@ -106,7 +106,7 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
 
       fetch(url, options)
         .then((response) => {
-          setIsLoading(false); // Set loading state to false after response
+          // setIsLoading(false); // Set loading state to false after response
           if (!response.ok) {
             throw new Error("Network response was not ok");
           }
@@ -115,7 +115,8 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
         })
         .then((data) => {
           console.log(data);
-          alert('Thank you for your message!');
+          sendReply()
+          // alert('Thank you for your message!');
           // Reset form
           setFormData({
             name: "",
@@ -129,7 +130,48 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
         });
     }
   }
+  function sendReply(){
+     const url = `/api/sendReply`;
+      const requestData = {
+        email: formData.email,
+        name: formData.name,
+        // subject: formData.subject,
+        // message: formData.message,
+      };
 
+      const options = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestData),
+      };
+
+      fetch(url, options)
+        .then((response) => {
+          setIsLoading(false); // Set loading state to false after response
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+
+          return response;
+        })
+        .then((data) => {
+          console.log(data);
+          // sendReply()
+          alert('Thank you for your message! ');
+          // Reset form
+          setFormData({
+            name: "",
+            email: "",
+
+            message: "",
+          });
+        })
+        .catch((error) => {
+          console.error("Registration failed:", error);
+        });
+  }
   const handleClickContactUs = () => {
     setIsOpen(true);
   };
