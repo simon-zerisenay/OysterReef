@@ -34,7 +34,7 @@ export async function POST(req: Request, res: Response) {
         }
       </style>
       <div class="center">
-        <h1>Welcome to FRC Activity App!</h1>
+        <h1>${name} requested information</h1>
         <p>${email}</p>
         <p>${message}</p>
       </div>
@@ -45,7 +45,7 @@ export async function POST(req: Request, res: Response) {
         name: name, // Set the display name using the request body's name
         address: email, // Use your actual email address
       },
-      to: '"FRC Activity App" <eyasuaraya0@gmail.com>',
+      to: '"Oyster Reefs" <eyasuaraya0@gmail.com>',
       text: message,
       html: html,
     };
