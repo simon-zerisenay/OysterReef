@@ -6,10 +6,11 @@ dotenv.config();
 
 export async function POST(req: Request, res: Response) {
   const data = await req.json();
-  console.log(data);
+  // console.log(data);
 
   try {
-    const { email, message,  name } = data;
+    const { email, message,  name,title,price } = data;
+    // console.log(title)
 
     // Validate input (optional, but recommended)
     if (!email || !message || !name) {
@@ -37,6 +38,8 @@ export async function POST(req: Request, res: Response) {
         <h1>${name} requested information</h1>
         <p>${email}</p>
         <p>${message}</p>
+        <p>${title}</p>
+        <p>${price}</p>
       </div>
     `;
 

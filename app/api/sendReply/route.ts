@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 export async function POST(req: Request, res: Response) {
-  const { email, name } = await req.json();
+  const { email, name,title,price } = await req.json();
 
   const transporter = await nodemailer.createTransport({
     service: "gmail",
@@ -26,8 +26,11 @@ export async function POST(req: Request, res: Response) {
   `;
 
   const replyMailOptions = {
-    from: '"Oyster reefs" <eyasuaraya0@gmail.com>',
-    to: `"${name}" <${email}>`,
+    from: {
+        name: name, // Set the display name using the request body's name
+        address: email, // Use your actual email address
+      },
+      to: '"Support team" <eyasuaraya0@gmail.com>',
     subject: "Re: Your Message",
     html: replyHtml,
   };

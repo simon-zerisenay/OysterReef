@@ -20,6 +20,9 @@ interface FormError {
 }
 
 const Popup: React.FC<PopupProps> = ({ title, price }) => {
+  // console.log(title)
+  // const[newtitle,setNewTitle]=useState(title)
+  // const[newprice,setNewPrice]=useState(price)
   const [isOpen, setIsOpen] = useState(false);
   const [errors, setErrors] = useState<FormError>({});
   const [formData, setFormData] = useState<FormData>({
@@ -79,10 +82,7 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
       ...formData,
       [name]: value,
     });
-    // setErrors({
-    //   ...errors,
-    //   [name]: "",
-    // });
+    
   };
 
   async function handleSubmit() {
@@ -92,9 +92,12 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
       const requestData = {
         email: formData.email,
         name: formData.name,
-        // subject: formData.subject,
+        
         message: formData.message,
+        title: title,
+        price:price,
       };
+      // console.log(title)
 
       const options = {
         method: "POST",
@@ -114,7 +117,7 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
           return response;
         })
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           sendReply()
           // alert('Thank you for your message!');
           // Reset form
@@ -124,6 +127,7 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
 
             message: "",
           });
+          
         })
         .catch((error) => {
           console.error("Registration failed:", error);
@@ -135,7 +139,8 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
       const requestData = {
         email: formData.email,
         name: formData.name,
-        // subject: formData.subject,
+        // title: title,
+        // price:price
         // message: formData.message,
       };
 
@@ -157,7 +162,7 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
           return response;
         })
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           // sendReply()
           alert('Thank you for your message! ');
           // Reset form
