@@ -45,8 +45,8 @@ export async function POST(req: Request, res: Response) {
 
     const mailOptions = {
       from: {
-        name: name, // Set the display name using the request body's name
-        address: email, // Use your actual email address
+        name: name, 
+        address: email, 
       },
       to: '"Oyster Reefs" <eyasuaraya0@gmail.com>',
       text: message,

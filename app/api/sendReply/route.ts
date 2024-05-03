@@ -25,12 +25,9 @@ export async function POST(req: Request, res: Response) {
     </div>
   `;
 
-  const replyMailOptions = {
-    from: {
-        name: name, // Set the display name using the request body's name
-        address: email, // Use your actual email address
-      },
-      to: '"Support team" <eyasuaraya0@gmail.com>',
+   const replyMailOptions = {
+    from: '"support team" <eyasuaraya0@gmail.com>',
+    to: `"${name}" <${email}>`,
     subject: "Re: Your Message",
     html: replyHtml,
   };
