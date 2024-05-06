@@ -23,7 +23,7 @@ export async function POST(req: Request, res: Response) {
       port: 587,
       secure: false,
       auth: {
-        user: "eyasuaraya0@gmail.com",
+        user: "oysterreefs@gmail.com",
         pass: process.env.Email_Password,
       },
     });
@@ -37,18 +37,19 @@ export async function POST(req: Request, res: Response) {
       <div class="center">
         <h1>${name} requested information</h1>
         <p>${email}</p>
-        <p>${message}</p>
-        <p>${title}</p>
-        <p>${price}</p>
+        <p>message: ${message}</p>
+        <h3>Subscription Type Request</h3>
+        <p>${title}: ${price} </p>
+       
       </div>
     `;
 
     const mailOptions = {
       from: {
-        name: name, 
+        name: 'Oyster-Reefs', 
         address: email, 
       },
-      to: '"Oyster Reefs" <eyasuaraya0@gmail.com>',
+      to: '"Oyster Reefs" <info@frc.ae>',
       text: message,
       html: html,
     };

@@ -12,7 +12,7 @@ export async function POST(req: Request, res: Response) {
     port: 587, // Consider using port 465 with SSL/TLS for encryption
     secure: false, // Enable TLS encryption (check provider documentation)
     auth: {
-      user: "eyasuaraya0@gmail.com",
+      user: "oysterreefs@gmail.com",
       pass: process.env.Email_Password,
     },
   });
@@ -21,12 +21,12 @@ export async function POST(req: Request, res: Response) {
     <div>
       <p>Dear ${name},</p>
       <p>Thank you for contacting us. We have received your message and will get back to you as soon as possible.</p>
-      <p>Best regards,<br/>Support Team</p>
+      <p>Best regards,<br/>Oyster-reef Team</p>
     </div>
   `;
 
    const replyMailOptions = {
-    from: '"support team" <eyasuaraya0@gmail.com>',
+    from: '"Oyster-reefs team" <oysterreefs@gmail.com>',
     to: `"${name}" <${email}>`,
     subject: "Re: Your Message",
     html: replyHtml,
