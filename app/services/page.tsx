@@ -12,16 +12,16 @@ interface PriceCardData {
 }
 
 const ServicesPage = () => {
-  const features = [
-    'Trimestral biodiversity report',
-    'Monthly diversity report',
-    'Access to Environmental data',
-    'trimestral dive',
-    'Monthly report',
-    'real-time access',
-    'reef named as per sponsor brand',
-    'trimestral dive',
-  ];
+  // const features = [
+  //   'Trimestral biodiversity report',
+  //   'Monthly diversity report',
+  //   'Access to Environmental data',
+  //   'trimestral dive',
+  //   'Monthly report',
+  //   'real-time access',
+  //   'reef named as per sponsor brand',
+  //   'trimestral dive',
+  // ];
   return (
     <div className='flex flex-col'>
       <div className=' m-20 flex justify-center'>
@@ -39,7 +39,7 @@ const ServicesPage = () => {
           ))}
           
         </div>
-        <div className='w-full flex flex-col items-center mb-10'>
+        {/* <div className='w-full flex flex-col items-center mb-10'>
           <h1 className='text-blue-900  text-4xl mt-20 mb-10 '>Features</h1>
           <ul className='grid-cols-1 grid sm:grid-cols-2 items-center justify-center gap-2'>
             {features.map((feature, index) => (
@@ -51,7 +51,7 @@ const ServicesPage = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         <h1 className='text-blue-900 text-4xl mt-20'>
           "Reviving Oceans, Building Reefs"
         </h1>

@@ -187,7 +187,7 @@ const Popup: React.FC<PopupProps> = ({ title, price }) => {
 
   return (
     <>
-  <button className='px-4 py-2 bg-blue-900 text-white hover:text-black hover:bg-blue-200' onClick={handleClickContactUs}>
+  <button className=' px-4 py-2 bg-blue-900 text-white hover:text-black hover:bg-blue-200   ' onClick={handleClickContactUs}>
     Contact Us
   </button>
   {isOpen && (
