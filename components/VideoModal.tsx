@@ -17,8 +17,8 @@ function handleClose(){
   return (
     <>
       {modal && (
-        <dialog className='fixed left-0 top-0 w-full h-full bg-black bg-opacity-50 z-50 overflow-auto backdrop-blur flex justify-center items-center'>
-          <IoClose className='absolute top-10 text-white text-5xl hover:scale-110 transition-all duration-300 ease-in-out' onClick={handleClose}/>
+        <dialog className='fixed left-0 top-0 w-full h-full bg-black bg-opacity-70 z-50 overflow-auto backdrop-blur flex justify-center items-center'>
+          <IoClose className='absolute top-24 text-white text-5xl hover:scale-110 transition-all duration-300 ease-in-out' onClick={handleClose}/>
           <ReactPlayer
             url={BEFORE_AFTER_OYSTEER[1].videoUrl}
             controls={true}
