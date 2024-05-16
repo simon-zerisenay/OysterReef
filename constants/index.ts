@@ -109,6 +109,6 @@ export const BEFORE_AFTER_OYSTEER = [
 After Installation of Artificial Reefs:
 "Observe the enriched marine ecosystem following the introduction of variously shaped artificial reefs, including oyster shells. This segment demonstrates increased fish attraction and habitat complexity, revealing the tangible benefits of these structures in enhancing marine biodiversity."`,
     videoUrl:
-      'https://www.youtube.com/watch?v=sHzfwow5L1Q',
+      'https://www.youtube.com/watch?v=8SJ71FTXI6U',
   },
 ];
